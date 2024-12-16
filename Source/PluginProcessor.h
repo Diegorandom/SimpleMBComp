@@ -10,7 +10,7 @@
 
 /**
  Roadmap
- 1) Figure out how to split the audio into 3 bands
+ 1) Figure out how to split the audio into 3 bands - DONE
  2) Create parameters to control where this split happens
  3) Prove that splitting into 3 bands produces no audible artifacts
  4) Create audio parameters for the 3 compressor bands. These need to live on each band instance.
@@ -172,13 +172,16 @@ private:
     CompressorBand compressor;
     
     using Filter = juce::dsp::LinkwitzRileyFilter<float>;
-    Filter LP, HP;
+    //     Fc0  Fc1
+    Filter LP1, AP2,
+           HP1, LP2,
+                HP2;
     
-    Filter AP;
+//    Filter invAP1, invAP2;
+//    juce::AudioBuffer<float> invAPBuffer;
     
-    juce::AudioBuffer<float> apBuffer;
-    
-    juce::AudioParameterFloat* lowCrossover { nullptr };
+    juce::AudioParameterFloat* lowMidCrossover { nullptr };
+    juce::AudioParameterFloat* midHighCrossover { nullptr };
     
     std::array<juce::AudioBuffer<float>, 2> filterBuffers;
     //==============================================================================
