@@ -6,14 +6,19 @@
   <MAINGROUP id="dvCSoG" name="SimpleMBComp">
     <GROUP id="{58E9F8F9-E670-3E51-86F2-0FC75D03C426}" name="Source">
       <GROUP id="{1EE7B5F1-0536-12A7-1824-C1660B2CA458}" name="DSP">
+        <FILE id="qLjQWZ" name="SingleChannelSampleFifo.h" compile="0" resource="0"
+              file="Source/DSP/SingleChannelSampleFifo.h"/>
         <FILE id="FSPMzk" name="CompressorBand.cpp" compile="1" resource="0"
               file="Source/DSP/CompressorBand.cpp"/>
         <FILE id="Y6MHeN" name="CompressorBand.h" compile="0" resource="0"
               file="Source/DSP/CompressorBand.h"/>
         <FILE id="HZn997" name="Params.cpp" compile="1" resource="0" file="Source/DSP/Params.cpp"/>
         <FILE id="LrdjxH" name="Params.h" compile="0" resource="0" file="Source/DSP/Params.h"/>
+        <FILE id="gGTx9A" name="Fifo.h" compile="0" resource="0" file="Source/DSP/Fifo.h"/>
       </GROUP>
       <GROUP id="{E6FB8621-461E-865E-45CE-E2330B252359}" name="GUI">
+        <FILE id="qEZ5LQ" name="AnalyzerPathGenerator.h" compile="0" resource="0"
+              file="Source/GUI/AnalyzerPathGenerator.h"/>
         <FILE id="cypk60" name="CompressorBandControls.cpp" compile="1" resource="0"
               file="Source/GUI/CompressorBandControls.cpp"/>
         <FILE id="NJTpDK" name="CompressorBandControls.h" compile="0" resource="0"
@@ -21,16 +26,25 @@
         <FILE id="xuF71r" name="CustomButtons.cpp" compile="1" resource="0"
               file="Source/GUI/CustomButtons.cpp"/>
         <FILE id="S7SCee" name="CustomButtons.h" compile="0" resource="0" file="Source/GUI/CustomButtons.h"/>
+        <FILE id="a7s7Sy" name="FFTDataGenerator.h" compile="0" resource="0"
+              file="Source/GUI/FFTDataGenerator.h"/>
         <FILE id="msswiF" name="GlobalControls.cpp" compile="1" resource="0"
               file="Source/GUI/GlobalControls.cpp"/>
         <FILE id="QJapCK" name="GlobalControls.h" compile="0" resource="0"
               file="Source/GUI/GlobalControls.h"/>
         <FILE id="J3IQYl" name="LookAndFeel.cpp" compile="1" resource="0" file="Source/GUI/LookAndFeel.cpp"/>
         <FILE id="NyRJg1" name="LookAndFeel.h" compile="0" resource="0" file="Source/GUI/LookAndFeel.h"/>
+        <FILE id="TbOCk4" name="PathProducer.cpp" compile="1" resource="0"
+              file="Source/GUI/PathProducer.cpp"/>
+        <FILE id="A8HTHF" name="PathProducer.h" compile="0" resource="0" file="Source/GUI/PathProducer.h"/>
         <FILE id="xxmCPM" name="RotarySliderWithLabels.cpp" compile="1" resource="0"
               file="Source/GUI/RotarySliderWithLabels.cpp"/>
         <FILE id="nu20BD" name="RotarySliderWithLabels.h" compile="0" resource="0"
               file="Source/GUI/RotarySliderWithLabels.h"/>
+        <FILE id="xWlk1B" name="SpectrumAnalyzer.cpp" compile="1" resource="0"
+              file="Source/GUI/SpectrumAnalyzer.cpp"/>
+        <FILE id="NzDjPU" name="SpectrumAnalyzer.h" compile="0" resource="0"
+              file="Source/GUI/SpectrumAnalyzer.h"/>
         <FILE id="OjXakO" name="Utilities.cpp" compile="1" resource="0" file="Source/GUI/Utilities.cpp"/>
         <FILE id="KzhBbH" name="Utilities.h" compile="0" resource="0" file="Source/GUI/Utilities.h"/>
         <FILE id="pE5jff" name="UtilityComponents.cpp" compile="1" resource="0"
