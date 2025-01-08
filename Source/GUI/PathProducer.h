@@ -27,10 +27,15 @@ struct PathProducer
     
     juce::Path getPath() { return leftChannelFFTPath; }
 
+    void updateNegativeInfinity(float nf) {
+        negativeInfinity = nf;
+    }
+    
 private:
     SingleChannelSampleFifo<SimpleMBCompAudioProcessor::BlockType>* leftChannelFifo;
     juce::AudioBuffer<float> monoBuffer;
     FFTDataGenerator<std::vector<float>> leftChannelFFTDataGenerator;
     AnalyzerPathGenerator<juce::Path> pathProducer;
     juce::Path leftChannelFFTPath;
+    float negativeInfinity { -48.f };
 };
