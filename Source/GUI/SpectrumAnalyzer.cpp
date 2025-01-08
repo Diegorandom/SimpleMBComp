@@ -135,21 +135,21 @@ void SpectrumAnalyzer::paint (juce::Graphics& g)
             drawFFTAnalysis(g, bounds);
         }
         
-        Path border;
+//        Path border;
         
-        border.setUsingNonZeroWinding(false);
+//        border.setUsingNonZeroWinding(false);
+//
+//        border.addRoundedRectangle(getRenderArea(bounds), 4);
+//        border.addRectangle(getLocalBounds());
         
-        border.addRoundedRectangle(getRenderArea(bounds), 4);
-        border.addRectangle(getLocalBounds());
-        
-        g.setColour(Colours::black);
+//        g.setColour(Colours::black);
         
 //        g.fillPath(border);
         
         drawTextLabels(g, bounds);
         
-        g.setColour(Colours::orange);
-        g.drawRoundedRectangle(getRenderArea(bounds).toFloat(), 4.f, 1.f);
+//        g.setColour(Colours::orange);
+//        g.drawRoundedRectangle(getRenderArea(bounds).toFloat(), 4.f, 1.f);
 
 }
 
@@ -251,7 +251,8 @@ void SpectrumAnalyzer::drawTextLabels(juce::Graphics &g, juce::Rectangle<int> bo
         Rectangle<int> r;
         r.setSize(textWidth, fontHeight);
         r.setCentre(x, 0);
-        r.setY(1);
+//        r.setY(1);
+        r.setY(bounds.getY());
         
         g.drawFittedText(str, r, juce::Justification::centred, 1);
     }
@@ -270,7 +271,8 @@ void SpectrumAnalyzer::drawTextLabels(juce::Graphics &g, juce::Rectangle<int> bo
         
         Rectangle<int> r;
         r.setSize(textWidth, fontHeight);
-        r.setX(getWidth() - textWidth);
+//        r.setX(getWidth() - textWidth);
+        r.setX(bounds.getRight() - textWidth );
         r.setCentre(r.getCentreX(), y);
         
         g.setColour(gDb == 0.f ? Colour(0u, 172u, 1u) : Colours::lightgrey );
@@ -279,7 +281,7 @@ void SpectrumAnalyzer::drawTextLabels(juce::Graphics &g, juce::Rectangle<int> bo
         
         str.clear();
         str << (gDb - 24.f);
-        r.setX(1);
+        r.setX(bounds.getX() + 1 );
         textWidth = g.getCurrentFont().getStringWidth(str);
         r.setSize(textWidth, fontHeight);
         g.setColour(Colours::lightgrey);
