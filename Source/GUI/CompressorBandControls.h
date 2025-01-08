@@ -39,7 +39,13 @@ private:
     
     juce::Component::SafePointer<CompressorBandControls> safePtr { this };
     
+    juce::ToggleButton* activeBand = &lowBand;
+    
     void updateAttachments();
     void updateSliderEnablements();
     void updateSoloMuteBypassToggleStates(juce::Button& clickedButton);
+    void updateActiveBandFillColours(juce::Button& clickedButton);
+    void resetActiveBandColors();
+    static void refreshBandButtonColors(juce::Button& band, juce::Button& colorSource);
+    void updateBandSelectButtonStates();
 };
