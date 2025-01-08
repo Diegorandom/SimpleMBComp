@@ -29,8 +29,8 @@
  6) Custom Look and Feel for Sliders and Toggle Buttons - DONE
  7) Spectrum Analyzer Overview - DONE
  8) Data Structures for Spectrum Analyzer - DONE
- 9) Fifo usage in pluginProcessor::processBlock
- 10) Implementation of the Analyzer Rendering Pre-computed Paths.
+ 9) Fifo usage in pluginProcessor::processBlock - DONE
+ 10) Implementation of the Analyzer Rendering Pre-computed Paths. - DONE
  11) Drawing Cross-overs on top of the Analyzer Plot.
  12) Drawing Gain Reduction on top of the Analyzer.
  13) Analyzer Bypass
