@@ -39,7 +39,7 @@ bool truncateKiloValue(T& value)
     }
 }
 
-void drawmoduleBackground(juce::Graphics &g, juce::Rectangle<int> bounds)
+juce::Rectangle<int> drawmoduleBackground(juce::Graphics &g, juce::Rectangle<int> bounds)
 {
     using namespace juce;
     g.setColour(Colours::blueviolet);
@@ -52,4 +52,6 @@ void drawmoduleBackground(juce::Graphics &g, juce::Rectangle<int> bounds)
     g.fillRoundedRectangle(bounds.toFloat(), 3);
     
     g.drawRect(localBounds);
+    
+    return bounds;
 }
