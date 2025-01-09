@@ -45,8 +45,14 @@ private:
     juce::Rectangle<int> getRenderArea(juce::Rectangle<int> bounds);
     
     juce::Rectangle<int> getAnalysisArea(juce::Rectangle<int> bounds);
-    
     PathProducer leftPathProducer, rightPathProducer;
-    
     void drawFFTAnalysis(juce::Graphics& g, juce::Rectangle<int> bounds);
+    void drawCrossovers(juce::Graphics& g, juce::Rectangle<int> bounds);
+    
+    juce::AudioParameterFloat* lowMidXoverParam { nullptr };
+    juce::AudioParameterFloat* midHighXoverParam { nullptr };
+    
+    juce::AudioParameterFloat* lowThresholdParam { nullptr };
+    juce::AudioParameterFloat* midThresholdParam { nullptr };
+    juce::AudioParameterFloat* highThresholdParam { nullptr };
 };

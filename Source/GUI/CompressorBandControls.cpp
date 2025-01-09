@@ -388,7 +388,7 @@ void CompressorBandControls::updateAttachments()
     makeAttachmentHelper(attackSliderAttachment, names[Pos::Attack], attackSlider);
     makeAttachmentHelper(releaseSliderAttachment, names[Pos::Release], releaseSlider);
     makeAttachmentHelper(thresholdSliderAttachment, names[Pos::Threshold], thresholdSlider);
-    makeAttachmentHelper(thresholdSliderAttachment, names[Pos::Ratio], ratioSlider);
+    makeAttachmentHelper(ratioSliderAttachment, names[Pos::Ratio], ratioSlider);
     makeAttachmentHelper(bypassButtonAttachment, names[Pos::Bypass], bypassButton);
     makeAttachmentHelper(soloButtonAttachment, names[Pos::Solo], soloButton);
     makeAttachmentHelper(muteButtonAttachment, names[Pos::Mute], muteButton);
