@@ -32,7 +32,7 @@
  9) Fifo usage in pluginProcessor::processBlock - DONE
  10) Implementation of the Analyzer Rendering Pre-computed Paths. - DONE
  11) Drawing Cross-overs on top of the Analyzer Plot. - DONE
- 12) Drawing Gain Reduction on top of the Analyzer.
+ 12) Drawing Gain Reduction on top of the Analyzer. - Duct
  13) Analyzer Bypass
  14) Global Bypass Button
  */
