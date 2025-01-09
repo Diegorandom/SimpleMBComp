@@ -181,7 +181,7 @@ void SpectrumAnalyzer::drawCrossovers(juce::Graphics &g, juce::Rectangle<int> bo
     const auto top = bounds.getY();
     const auto bottom = bounds.getBottom();
     const auto left = bounds.getX();
-    const auto right = bounds.getX();
+    const auto right = bounds.getRight();
     
     auto mapX = [left = bounds.getX(),
                 width = bounds.getWidth()
