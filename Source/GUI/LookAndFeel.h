@@ -12,6 +12,22 @@
 
 #include <JuceHeader.h>
 
+#define USE_LIVE_CONSTANT true
+
+#if USE_LIVE_CONSTANT
+#define colorHelper(c) JUCE_LIVE_CONSTANT(c);
+#else
+#define colorHelper(c) c;
+#endif
+
+namespace ColorScheme
+{
+inline juce::Colour getSliderBorderColor()
+{
+    return colorHelper(juce::Colours::blue);
+}
+}
+
 struct LookAndFeel : juce::LookAndFeel_V4
 {
     void drawRotarySlider(juce::Graphics & g,
