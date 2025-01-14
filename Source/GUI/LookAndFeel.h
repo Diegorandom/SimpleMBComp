@@ -24,9 +24,15 @@ namespace ColorScheme
 {
 inline juce::Colour getSliderBorderColor()
 {
-    return colorHelper(juce::Colours::blue);
+    return colorHelper( juce::Colour(0xff27869c) );
+}
+
+inline juce::Colour getModuleBorderColor()
+{
+    return colorHelper( juce::Colours::blueviolet );
 }
 }
+
 
 struct LookAndFeel : juce::LookAndFeel_V4
 {
